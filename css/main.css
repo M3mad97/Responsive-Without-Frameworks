@@ -1,0 +1,439 @@
+/* Start Global */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* End Global */
+/* Start Header */
+header{
+    background: url(../img/service.jpg) no-repeat top center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    min-height: 500px;
+    position: relative
+}
+header .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    color:#fff
+}
+header .overlay h1{font-size: 50px;margin: 100px;}
+
+header .overlay .plan{
+    border: 2px solid #fff;
+    font-size: 24px;
+    width:48%;
+    float: left;
+    padding: 10px;
+    margin-left: 1%;
+    margin-right: 1%
+}
+header .overlay .order{
+    border: 2px solid #fff;
+    font-size: 24px;
+    padding: 10px;
+    margin: 10px 1% 0;
+    width: 98%
+}
+/* End Header */
+
+/* Start Featurs */
+.featurs .feat{width: 33.33333333%;padding: 0 20px 0 0}
+
+.featurs .feat p{line-height: 1.7;color: #555}
+/* End Featurs */
+
+/* Start About Us */
+.aboutus {background-color: #ccc;padding: 20px;}
+
+.aboutus h4{margin: 20px}
+
+.aboutus p{line-height: 2;letter-spacing: 2px}
+/* End About Us */
+/* Start Our works */
+.our-works .image{width: calc(100%/4)}
+
+/* End our works */
+/* Start price table */
+.pricing-table{
+    background-color: #444;
+    color: #fff;
+    padding: 50px 0;    
+}
+.pricing-table .pricing-plan{
+    width: 32.66666666%;
+    border: 3px solid #fff;
+    padding: 20px
+}
+.pricing-table .pricing-plan h3{
+    margin: 0 0 10px;
+    font-size: 26px
+}
+.pricing-table .pricing-plan span{
+    display: block;
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #bfbfbf
+}
+.pricing-table .pricing-plan ul{
+    line-height: 2;
+    font-size:  18px
+}
+.pricing-table .pricing-plan:not(.ultimate){
+        margin-right: 1%
+    }
+/* End Prrice table */
+/* Start That They say */
+
+.they-say {
+  padding: 50px 0
+}
+
+.they-say .h1 {
+  font-size: 50px;
+  margin: 0 0 30px;
+  color: #555
+}
+
+.they-say .person-say {
+  background-color: #EEE;
+  padding: 20px;
+  margin: 0 0 25px;
+  border: 1px solid #DDD;
+  border-radius: 10px
+}
+
+.they-say .person-say .avatar {
+  width: 120px;
+  margin-right: 20px
+}
+
+.they-say .person-say h3 {
+  margin: 5px 0 10px
+}
+
+.they-say .person-say p {
+  margin: 0;
+  line-height: 1.7;
+  width: calc(100% - 140px)
+}
+/* End That They say */
+/* Start Information */
+.information {
+    background-color: #ececec;
+    padding: 30px 0;
+    font-size: 18px
+}
+.information .h1 {
+  font-size: 50px;
+  color: #848484
+}
+.information .info-list{
+    margin-bottom: 0
+}
+.information .info-list li {
+  display: inline-block;
+  background-color: #DDD;
+  padding: 10px;
+  padding: 15px;
+  font-size: 22px;
+  cursor: pointer
+}
+
+.information .info-list li.selected {
+  background-color: #FFF;
+  color: #22a9bd
+}
+.information .info-content {
+    margin-bottom: 30px;
+    margin-left: 40px
+}
+.information .info-content > div {
+  padding: 20px;
+  background-color: #FFF;
+  line-height: 2
+}
+
+.information .info-content > div:not(:first-of-type) {
+  display: none
+}
+/* End Information */
+
+/* Start Contact */
+
+.contact {
+	background: url(../img/service.jpg) no-repeat top center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    min-height: 500px;
+    position: relative
+}
+.contact .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    color:#fff
+}
+.info{width: 49%}
+
+.message {width: 49%}
+
+.contact input{
+	display:block;
+    padding: 15px 5px 15px 5px;
+    width: 100%;
+    margin-bottom: 20px
+}
+.contact input:hover,
+.contact textarea:hover{
+    -webkit-box-shadow: 9px 2px 22px -6px #000;
+    -moz-box-shadow: 9px 2px 22px -6px #000;
+    -o-box-shadow: 9px 2px 22px -6px #000;
+    box-shadow: 9px 2px 22px -6px #000;
+    border: 0
+}
+.contact input[type="button"]{
+    background-color: #2980D9;
+    border: 0;
+    font-size: 20px
+}
+
+.contact textarea{
+	padding: 15px 5px 15px 5px;
+    width: 100%;
+    height: 123px;
+    margin-bottom: 16px
+}
+ /* End Contact */
+
+/* Start Footer */
+footer{padding: 20px}
+
+footer p{font-size: 20px}
+
+footer ul{list-style: none}
+
+footer ul li {display: inline-block}
+
+footer ul li a{text-decoration: none;color: #000;font-size: 25px;}
+
+footer ul li a i{
+    -webkit-transition:all 1s ease-in-out;
+    -moz-transition:all 1s ease-in-out;
+    -o-transition:all 1s ease-in-out;
+    transition:all 1s ease-in-out;
+}
+footer ul li a:hover i{transform:scale(1.2,1.2) rotateY(360deg)}
+
+/* End Footer */
+/* Start Media */
+@media (max-width: 767px)/*Mobile & Tablet Rule */{
+    /* Start Header */
+    .visible-xs {
+        display: block !important
+    }
+    .hidden-xs{
+        display: none !important
+    }
+    h1{
+        font-size: 40px !important;
+        text-align: center;
+        margin: 50px !important
+    }
+    header .overlay .plan{
+        float: none;
+        width: 100%;
+        margin-bottom: 10px
+    }
+    header .overlay .order{
+        width: 100%;
+    }
+    .featurs .feat{
+        width: 100%;
+    }
+    footer p{font-size: 16px}
+    form .info,
+    form .message{
+        float:none;
+        width: 100%
+    }
+    /* End Header */
+    /* Start Our works */
+    .our-works .image{width: calc(100%/2)}
+    /* End Our works */
+    /* Start our pricing */
+    .pricing-table .pricing-plan{
+        width: 100%;
+        margin-bottom: 2%
+    }
+    /* End our pricing */
+    /* Start say about us */
+    .they-say .person-say .avatar {
+        float: none;
+        margin: auto
+  }
+  .they-say .person-say h3 {
+      float: none;
+      text-align: center
+  }
+  .they-say .person-say p {
+      float: none;
+      width: 100%
+  }
+    /* End say about us */
+    /* Start Information */
+    .information .info-list li{
+        display: block
+    }
+    /* End Information */
+    .contact{
+        min-height: 600px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px)/*Small Screen Rules */{
+    .container {width: 750px;}
+    
+    .visible-sm {display: block !important}
+    
+    .hidden-sm{display: none !important}
+    
+    .featurs .feat:first-of-type{width: 100%;}
+    
+    .featurs .feat:not(:first-of-type){
+        width: 50%;
+        text-align: left
+    }
+    
+    /* Start Our works */
+    .our-works .image{width: calc(100%/3)}
+    /* End Our works */
+    
+    /* Start Say about us */
+    .they-say .person-say:first-of-type {
+        width: 100%
+    }
+  .they-say .person-say:not(:first-of-type) {
+      width: 49%;
+    }
+  .they-say .person-say:last-of-type {
+      margin-left: 2%
+    }
+    /* End Say about us */
+    
+    form .info,
+    form .message{float:none;width: 100%}
+    .contact{min-height: 600px}
+}
+@media (min-width: 992px) and (max-width: 1199px)/*Medium Screen */{
+    .container {width: 970px;}
+    
+    .featurs .feat{width: 33.3333333%;}
+    
+    .visible-md {display: block !important}
+    
+    .hidden-md{display: none !important}
+    
+    /* Start Our pricing */ 
+    
+    .pricing-table .pricing-plan{
+        width: 32.6666666%
+    }
+    .pricing-table .pricing-plan.plus{
+        position: relative;
+        left: 33.6666666666%;
+    }
+    .pricing-table .pricing-plan.premium{
+        position: relative;
+        right: 33.6666666666%;
+    }
+    
+    /* End Our pricing */
+    /* Start what they say */
+    
+    .they-say .person-say:not(:first-of-type) .avatar {
+        float: none;
+        margin: auto
+  }
+  .they-say .person-say:not(:first-of-type) h3 {
+      float: none;
+      text-align: center
+  }
+  .they-say .person-say:not(:first-of-type) p {
+      float: none;
+      width: 100%
+  }
+    /* End what they say */
+}
+
+@media (min-width: 1200px)/*Large screen */{
+    .container {width: 1170px}
+    
+    .visible-lg {display: block !important}
+    
+    .hidden-lg{display: none !important}
+    
+    
+    /* Start What they say */
+    .they-say .person-say:first-of-type {
+        width: 98%;
+        margin-right: 2%
+    }
+    .they-say .person-say:not(first-of-type){
+        width: 48%;
+        margin-left: 2%
+    }
+    /* End What they say */
+}
+/* End Media */
+/* Start frame work */
+.container{margin: auto;padding:0 15px 0 15px;}
+
+.text-center{text-align: center}
+
+.visible-xs,
+.visible-sm,
+.visible-md,        
+.visible-lg{display: none;}
+
+.hidden-xs,
+.hidden-sm,
+.hidden-md,
+.hidden-lg{display: block;}
+
+.float-left{float: left}
+
+.float-right{float:right}
+
+.clear-fix{clear: both}
+
+.responsive-image{width: 100%}
+
+.h1{font-size: 2em}
+
+.h2{font-size: 1.5em}
+.list-unstyled{
+    list-style: none
+}
+.img-circle {
+  border-radius: 50%
+}
+
+.img-thumbnail {
+  padding: 3px;
+  background-color: #FFF;
+  border: 1px solid #CCC
+}
+/* End frame work */
