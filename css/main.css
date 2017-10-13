@@ -58,8 +58,41 @@ header .overlay .order{
 .aboutus p{line-height: 2;letter-spacing: 2px}
 /* End About Us */
 /* Start Our works */
-.our-works .image{width: calc(100%/4)}
+.our-works{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0 20px 0;
+}
+.our-works .image{
+    position: relative;
+    width: 24%;
+    margin: 0.5%;
+}
+.our-works .hover-box{
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+.our-works .image .hover-box i{color:#fff;margin-top: 7px;font-size: 25px;display: block}
 
+.our-works .image .hover-box a{text-decoration: none}
+
+.our-works .image:hover .hover-box{opacity: 1; cursor: pointer}
+
+.our-works .image:hover hr{
+    animation: small 3s ease;
+    animation-fill-mode: forwards
+}
 /* End our works */
 /* Start price table */
 .pricing-table{
@@ -92,15 +125,9 @@ header .overlay .order{
 /* End Prrice table */
 /* Start That They say */
 
-.they-say {
-  padding: 50px 0
-}
+.they-say {padding: 50px 0}
 
-.they-say .h1 {
-  font-size: 50px;
-  margin: 0 0 30px;
-  color: #555
-}
+.they-say .h1 {font-size: 50px;margin: 0 0 30px;color: #555}
 
 .they-say .person-say {
   background-color: #EEE;
@@ -128,7 +155,7 @@ header .overlay .order{
 /* Start Information */
 .information {
     background-color: #ececec;
-    padding: 30px 0;
+    padding: 50px 0;
     font-size: 18px
 }
 .information .h1 {
@@ -229,16 +256,9 @@ footer ul li {display: inline-block}
 
 footer ul li a{text-decoration: none;color: #000;font-size: 25px;}
 
-footer ul li a i{
-    -webkit-transition:all 1s ease-in-out;
-    -moz-transition:all 1s ease-in-out;
-    -o-transition:all 1s ease-in-out;
-    transition:all 1s ease-in-out;
-}
-footer ul li a:hover i{transform:scale(1.2,1.2) rotateY(360deg)}
-
 /* End Footer */
 /* Start Media */
+
 @media (max-width: 767px)/*Mobile & Tablet Rule */{
     /* Start Header */
     .visible-xs {
@@ -271,7 +291,10 @@ footer ul li a:hover i{transform:scale(1.2,1.2) rotateY(360deg)}
     }
     /* End Header */
     /* Start Our works */
-    .our-works .image{width: calc(100%/2)}
+    .our-works .image{
+        width: 49%;
+        margin:0.5%
+    }
     /* End Our works */
     /* Start our pricing */
     .pricing-table .pricing-plan{
@@ -294,13 +317,9 @@ footer ul li a:hover i{transform:scale(1.2,1.2) rotateY(360deg)}
   }
     /* End say about us */
     /* Start Information */
-    .information .info-list li{
-        display: block
-    }
+    .information .info-list li{display: block}
     /* End Information */
-    .contact{
-        min-height: 600px
-    }
+    .contact{min-height: 600px}
 }
 
 @media (min-width: 768px) and (max-width: 991px)/*Small Screen Rules */{
@@ -318,7 +337,10 @@ footer ul li a:hover i{transform:scale(1.2,1.2) rotateY(360deg)}
     }
     
     /* Start Our works */
-    .our-works .image{width: calc(100%/3)}
+    .our-works .image{
+        width: 49%;
+        margin:0.5%
+    }
     /* End Our works */
     
     /* Start Say about us */
@@ -364,16 +386,17 @@ footer ul li a:hover i{transform:scale(1.2,1.2) rotateY(360deg)}
     /* Start what they say */
     
     .they-say .person-say:not(:first-of-type) .avatar {
-        float: none;
-        margin: auto
+        float: left;
+        margin-right: 20px
   }
   .they-say .person-say:not(:first-of-type) h3 {
-      float: none;
-      text-align: center
+      text-align: left;
   }
   .they-say .person-say:not(:first-of-type) p {
-      float: none;
-      width: 100%
+      float: right;
+      margin: 0;
+      line-height: 1.7;
+      width: calc(100% - 140px);;
   }
     /* End what they say */
 }
@@ -437,3 +460,11 @@ footer ul li a:hover i{transform:scale(1.2,1.2) rotateY(360deg)}
   border: 1px solid #CCC
 }
 /* End frame work */
+@keyframes small {
+    from{
+        width: 90%;
+    }
+    to {
+        width: 50%
+    }
+}
